@@ -23,4 +23,6 @@
 <br>**J-Format**(jump จาก Address ปัจจุบัน ไปยังอีกตำแหน่งนึง)
 <br>op	Address
 <br>6bits	26bits
-
+<br>**J-Format**(อื่นๆ)
+<br>jump	j address
+<br>jump&link	jal address
