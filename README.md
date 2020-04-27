@@ -50,3 +50,12 @@ Format ของ R - Format
 |op  | rs  |  rt | rd  | shamt  | func  |
 ----- | ----- | ----- | ----- | ----- | ----- |
 | 6bits | 5bits | 5bits | 5bits | 5bits | 6 bits |
+
+op = Operation code(6 bits)
+<br>**หากเป็นR-format default คือ 000000**
+<br>rs = 1st register operand(5 bits)
+<br>rt = 2nd register operand(5 bits)
+<br>rd = register destination(5 bits)
+<br>shamt = shift amount(00000 หากไม่มีการใช้ส่วนนี้)(5bits)
+<br>funct = function code
+
