@@ -3,32 +3,50 @@
 <br>**MIPS  Instruction** เข้ารหัสในรูปแบบ Binary
 <br>**ชุดคำสั่งทุกคำสั่งมีความยาว 32 Bits**
 <br>**คำสั่งมี 3 ประเภทใหญ่ๆได้แก่**
-
+**R-Format** -เป็นคำสั่งที่ใช้ทางคณิตศาสตร์และตรรกศาสตร์ มีรูปแบบดังนี้
 
 |**R-Format**|     |     |     |     |     |
 |------------|-----|-----|-----|-----|-----|
 |     op     | $rs | $rt | $rd |shamt|func |
 |     6bits   | 5bits| 5bits| 5bits|5bits |6bits |
 
-|**คำสั่งอื่นๆ**    |     |     |     |     |     |
-|------------|-----|-----|-----|-----|-----|
-|ALU         | alu | $rd | $rs | $rt |     |
-|JR          | jr  | $rs |     |     |     |
-
-คำสั่งส่วนใหญ่จะไว้ใช้ทำงานในส่วนของการคำณวณทางตรรกศาสตร์
+ |**คำสั่งอื่นๆ**|     |     |     |     |     
+ |------------|-----|-----|-----|-----|
+ |ALU         | alu | $rd | $rs | $rt |     
+ |JR          | jr  | $rs |     |     |     
 
 <br>**I-Format**(เป็นคำสั่งที่ใช้ย้ายข้อมูล)
-<br> op	      $rs	     $rt	     offset
-<br>6bits	   5bits	  5bits	     16bits
+|**I-Format**|     |     |     |
+|------------|-----|-----|-----|
+|     op     | $rs | $rt | offset |
+|     6bits   | 5bits| 5bits| 16bits  |
 
-<br>**I-Format**(อื่นๆ)
-<br>ALUi	alui	$rt	$rs	value
-<br>Data Transfer	lw	$rt	offset($rs)	
-<br>              sw	$rt	offset($rs)
-<br>Branch	      beq	$rs	$rt	offset	
-<br>**J-Format**(jump จาก Address ปัจจุบัน ไปยังอีกตำแหน่งนึง)
-<br>op	Address
-<br>6bits	26bits
-<br>**J-Format**(อื่นๆ)
-<br>jump	j address
-<br>jump&link	jal address
+|**คำสั่งอื่นๆ**    |     |     |        |         | 
+|------------|-----|-----|---------|--------|
+|ALUi        |alui | $rt | $rs     | value   |
+|Data Transfer | lw | $rt | offset($rs)  |   |
+|             |  sw | $rt | offset($rs)  |   |
+|Branch      |  beq | $rs | $rt | offset |   | 
+
+**J-Format** -เป็นคำสั่งjump จาก Address ปัจจุบัน ไปยังอีกตำแหน่งนึง
+
+|**J-Format**|     |
+|------------|-----|
+|     op     | Address |
+|     6bit   | 26bit|
+
+|**คำสั่งอื่นๆ**    |           |
+|------------|------------|
+| jump       |  j address|
+| jump&link  |jal address|
+
+## การบ้านครั้งที่ 1
+
+### คำสั่ง ADD ในคอมพิวเตอร์ MIPS
+
+ชุดคำสั่งอยู่ในประเภท R-format
+
+Format ของ R - Format
+|op  | rs  |  rt | rd  | shamt  | func  |
+----- | ----- | ----- | ----- | ----- | ----- |
+| 6bits | 5bits | 5bits | 5bits | 5bits | 6 bits |
