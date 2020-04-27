@@ -119,4 +119,40 @@ op = Operation code(6 bits)
 
 ### [คลิปอธิบายการทำงานของ CPU](https://youtu.be/Js-kAyI459E)
 
+## การบ้านครั้งที่ 3
+
+### เปรียบเทียบ Single Cycle และ Multi Cycle 
+
+<br>**Single cycle**
+
+![image](https://cseweb.ucsd.edu/~j2lau/cs141/single_cycle_cpu_datapath.png)
+
+<br>จากรูปประกอบด้วย
+
+    *  3 ALU
+
+    *  2 Memory
+
+    * คำสั่งจบใน Cycle เดียว
+
+    * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
+
+![image](https://people.cs.pitt.edu/~don/coe1502/current/Unit4a/fig548.jpg)
+
+<br>จากรูปประกอบด้วย
+
+    *  1 ALU 
+    
+    *  1 Memory 
+    
+    *  คำสั่งไม่จบใน1cycle
+    
+    *  เวลาแต่ละคำสั่งไม่เท่ากัน
+    
+    * มีการพักData ที่ A B ก่อน
+    
+    *หลังากคำนวณนำค่าไปเก็บในALUOUT
+
+
+
 
