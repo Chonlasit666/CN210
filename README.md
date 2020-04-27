@@ -157,6 +157,57 @@
 
 ### งานครั้งที่ 3
 [คลิปงานครั้งที่ 3 อธิบายความแตกต่างระหว่าง Single Cycle และ Multi Cycle](https://youtu.be/6s3bkImpZWE)
+## การบ้านครั้งที่ 4
+
+### การทำงานแบบ Multi cycle ของคำสั่ง Load Word(lw) ใน MIPS
+
+![image](https://i.imgur.com/mWXHWpT.png)
+
+จากรูป Multi cycle 
+
+lw $rt,offset($rs)
+
+<br>**คำสั่งload wordมี5ขั้นตอน**
+
+    1. IR = Memory[PC]
+
+      PC = PC + 4
+      
+<br>**นำค่าจากmemoryมาเก็บในIR และบวกค่า pc ไป 4**
+
+    2. A = Reg[IR[25-21]]
+
+      B = Reg[IR[20-16]]
+   
+      ALUout = PC + (sign-extend(IR[15-0])<<2)
+ 
+ 
+<br>**นำค่าrs rt ไปเก็บไว้ที่ A , B นำค่าoffset(แปลงเป็น 32 bitsแล้วshift bitsไป2)มาที่ALUแล้วรวมกับ PC+4 เก็บไว้ที่ ALUOUT**
+
+    3. ALUOut = A + sign-extend(IR[15-0])
+
+<br>**นำ A + Sign-Extend(IR15-0)**
+
+    4. MDR = Memory[ALUout]
+
+<br>**การชี้ Address นี้ที่ memory เพื่ออ่านค่าออกมา**
+
+    5. Reg[IR[20-16]] = MDR
+    
+<br>**ค่าที่อ่านออกมาได้ไปเก็บในrt**
+
+### งานครั้งที่ 4
+  [คลิปงานครั้งที่ 4 การทำงานคำสั่ง lw ใน Multi Cycle](https://youtu.be/WP203l_PNBA)
+
+    
+ 
+
+
+
+    
+ 
+
+ 
 
 
 
