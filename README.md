@@ -12,8 +12,8 @@
 <br> JR	jr $rs	
 
 <br>**I-Format**(เป็นคำสั่งที่ใช้ย้ายข้อมูล)
-<br>op	$rs	$rt	offset
-<br>6bits	5bits	5bits	16bits
+<br> op	      $rs	     $rt	     offset
+<br>6bits	   5bits	  5bits	     16bits
 
 <br>**I-Format**(อื่นๆ)
 <br>ALUi	alui	$rt	$rs	value
@@ -21,4 +21,6 @@
 <br>              sw	$rt	offset($rs)
 <br>Branch	      beq	$rs	$rt	offset	
 <br>**J-Format**(jump จาก Address ปัจจุบัน ไปยังอีกตำแหน่งนึง)
-<br>
+<br>op	Address
+<br>6bits	26bits
+
