@@ -137,6 +137,8 @@
 
     * เวลาแต่ละคำสั่งเท่ากัน(เป็นเวลาของคำสั่งที่นานที่สุด)
 
+<br>**Multi cycle**
+
 ![image](https://people.cs.pitt.edu/~don/coe1502/current/Unit4a/fig548.jpg)
 
 <br>จากรูปประกอบด้วย
@@ -153,6 +155,8 @@
     
     *หลังากคำนวณนำค่าไปเก็บในALUOUT
 
+### งานครั้งที่ 3
+[คลิปงานครั้งที่ 3 อธิบายความแตกต่างระหว่าง Single Cycle และ Multi Cycle](https://youtu.be/6s3bkImpZWE)
 
 
 
