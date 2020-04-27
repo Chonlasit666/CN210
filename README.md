@@ -60,4 +60,5 @@ op = Operation code(6 bits)
 <br>funct = function code(6 bits)
 
 <br>**function code**
-![image](https://i.stack.imgur.com/QwYfS.gif)
+
+<br>![image](https://i.stack.imgur.com/QwYfS.gif)
