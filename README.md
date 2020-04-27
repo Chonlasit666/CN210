@@ -46,14 +46,14 @@
 ### คำสั่ง ADD ในคอมพิวเตอร์ MIPS
 
 ชุดคำสั่งอยู่ในประเภท R-format
-
 <br>Format ของ R - Format
+
 |**R-Format**|     |     |     |     |     |
 |------------|-----|-----|-----|-----|-----|
 |     op     | $rs | $rt | $rd |shamt|func |
 |     6bit   | 5bit| 5bit| 5bit|5bit |6bit |
 
-op = Operation code(6 bits)
+<br>op = Operation code(6 bits)
 <br>**หากเป็นR-format default คือ 000000**
 <br>rs = 1st register operand(5 bits)
 <br>rt = 2nd register operand(5 bits)
