@@ -5,10 +5,10 @@
 <br>**คำสั่งมี 3 ประเภทใหญ่ๆได้แก่**
 
 <br>**R-Format**
-| op || $rs || $rt || $rd || shamt || func |
-| ----- || ----- || ----- || ----- || ----- || ----- |
-| 6bits || 5bits || 5bits || 5bits || 5bits || 6bits |
+op	$rs	$rt	$rd	shamt	func
+6bits	5bits	5bits	5bits	5bits	6bits
 
+<br>**R-Format อื่นๆ**
+ALU	alu	$rd	$rs	$rt	 
+JR	jr	$rs
 
-
-<br>**R-Format**
