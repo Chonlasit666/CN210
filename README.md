@@ -57,5 +57,7 @@ op = Operation code(6 bits)
 <br>rt = 2nd register operand(5 bits)
 <br>rd = register destination(5 bits)
 <br>shamt = shift amount(00000 หากไม่มีการใช้ส่วนนี้)(5bits)
-<br>funct = function code
+<br>funct = function code(6 bits)
 
+<br>**function code**
+![image](https://i.stack.imgur.com/QwYfS.gif)
