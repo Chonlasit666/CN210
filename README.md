@@ -5,6 +5,6 @@
 <br>**คำสั่งมี 3 ประเภทใหญ่ๆได้แก่**
 
 <br>**R-Format**
-<br> op rs
-
+<br> op	$rs	$rt	$rd	shamt	func
+<br> 6bits	5bits	5bits	5bits	5bits	6bits
 
