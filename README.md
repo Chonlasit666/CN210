@@ -80,3 +80,42 @@ op = Operation code(6 bits)
 
 ### [คลิปอธิบายคำสั่ง ADD in MIPS](https://drive.google.com/file/d/1e2wFgEWxxR-G7eHH0iZLWzz-NmiGx2iD/view?usp=sharing)
 
+## การบ้านครั้งที่ 2
+
+### อธิบายการทำงานของ CPU
+
+<br>**ภาษามนุษย์ที่ใช้ในการเรียกคำสั่ง**
+
+
+                    === JAVA Language ===
+
+    class Test{
+
+        public static void main(String[] args){
+    
+            int a = 10;
+        
+            int b = 20;
+        
+            int c = a+b;
+        
+        }
+    
+    }
+ <br>**machine languageที่แปลงมาจากภาษามนุษย์**
+ 
+ 
+                    === Machine Language ===
+        Address          Instrution code
+        00000000:           08400000        //j  01000000
+        
+เมื่อมีการทำงานCPUจะเริ่มทำงานที่Address 00000000 ซึ่งในแต่ละAddress จะมีชุดคำสั่งที่ให้CPUทำงาน
+<br>เมื่อพบแล้วจะทการแปลงชุดคำสั่งจากเลขฐาน16 เป็นฐาน2 ในตัวอย่างคือ 08400000
+
+<br>จะได้ในฐาน2คือ 0000 1000 0100 0000 0000 0000 0000 0000
+หลังจากนั้นจะทำการเช็ค6bitsแรกว่าทำไงในชุดคำสั่งไหนในที่นี้คือคำสั่ง J-formatแล้วทำตามชุดคำสั่งจนจบ
+
+## ส่งการบ้านครั้งที่ 2
+
+### [คลิปอธิบายการทำงานของ CPU](https://youtu.be/AhHoyF2xnng)
+
