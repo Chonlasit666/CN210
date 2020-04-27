@@ -117,5 +117,5 @@ op = Operation code(6 bits)
 
 ## ส่งการบ้านครั้งที่ 2
 
-### [คลิปอธิบายการทำงานของ CPU](https://youtu.be/AhHoyF2xnng)
+### [คลิปอธิบายการทำงานของ CPU](https://youtu.be/Js-kAyI459E)
 
