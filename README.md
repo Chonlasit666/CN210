@@ -47,7 +47,7 @@
 
 ชุดคำสั่งอยู่ในประเภท R-format
 
-Format ของ R - Format
+<br>Format ของ R - Format
 |**R-Format**|     |     |     |     |     |
 |------------|-----|-----|-----|-----|-----|
 |     op     | $rs | $rt | $rd |shamt|func |
@@ -118,4 +118,5 @@ op = Operation code(6 bits)
 ## ส่งการบ้านครั้งที่ 2
 
 ### [คลิปอธิบายการทำงานของ CPU](https://youtu.be/Js-kAyI459E)
+
 
