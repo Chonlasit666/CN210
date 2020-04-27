@@ -5,5 +5,6 @@
 <br>**คำสั่งมี 3 ประเภทใหญ่ๆได้แก่**
 
 <br>**R-Format**
-  op rs rt rd
+<br> op rs
+
 
